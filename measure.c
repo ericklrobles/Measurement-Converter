@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <math.h>
 #include <string.h>
+#define ptokilo
 
 int main(void){
     int pounds, miles, kilometers, kilos;
@@ -16,14 +17,14 @@ int main(void){
         printf("Enter how many pounds you would like to convert to\n");
         scanf(" %d", &pounds);
         new_input = (pounds * 0.454);
-        printf(" %.2f KG\n", new_input);  
+        printf(" The %d amount of pounds has converted into %.2f kilograms!\n", pounds, new_input);  
      }
      
      if (input =='B'){
         printf("Enter how many miles you would like to convert to\n");
         scanf(" %d", &miles);
         new_input = (miles * 1.6);
-        printf(" %.2f km", new_input);
+        printf("The %d amount of miles has converted into %.2f km!", miles, new_input);
      }
     
     
