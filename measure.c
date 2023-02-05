@@ -25,10 +25,15 @@ int main(void){
         new_input = (pounds * ptokilo);
         printf(" The %d amount of pounds has converted into %.2f kilograms!\n", pounds, new_input);  
      } 
-      printf("continue? (y/n)");
+      printf("continue? (y/n)\n");
       scanf(" %c", &input2);
       if(input2 == 'y' || input2 == 'Y'){
          continue;
+      }
+      if (input2 == 'n' || input2 == 'N'){
+         break;
+      }else{
+         printf("try again and enter y\n");
       }
      
      
