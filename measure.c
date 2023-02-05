@@ -11,7 +11,7 @@ int main(void){
     char input;
     float new_input;
     
-    
+    while(1){
      printf("Enter A for pounds to kilo converter or Enter B for miles to kilometers converter\n");
      scanf(" %c", &input);
      if (input == 'A'|| input == 'a'){
@@ -24,10 +24,14 @@ int main(void){
      if (input =='B'|| input =='b'){
         printf("Enter how many miles you would like to convert to\n");
         scanf(" %d", &miles);
+        if(miles < 0){
+         printf("try again and use a positive integer");
+         break;
+        }
         new_input = (miles * milestokm);
         printf("The %d amount of miles has converted into %.2f km!\n", miles, new_input);
      }
     
-    
+    }
     return 0;
 }
