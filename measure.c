@@ -7,7 +7,7 @@
 #define milestokm 1.6
 
 int main(void){
-    int pounds, miles, kilometers, kilos;
+    int pounds, miles;
     char input;
     float new_input;
     char input2 , input3;
@@ -24,8 +24,7 @@ int main(void){
         }
         new_input = (pounds * ptokilo);
         printf(" The %d amount of pounds has converted into %.2f kilograms!\n", pounds, new_input);  
-     } 
-      printf("continue? (y/n)\n");
+        printf("continue? (y/n)\n");
       scanf(" %c", &input2);
       if(input2 == 'y' || input2 == 'Y'){
          continue;
@@ -35,6 +34,9 @@ int main(void){
       }else{
          printf("try again and enter y\n");
       }
+     
+     } 
+      
      
      
      if (input =='B'|| input =='b'){
@@ -46,8 +48,7 @@ int main(void){
         }
         new_input = (miles * milestokm);
         printf("The %d amount of miles has converted into %.2f km!\n", miles, new_input);
-     }
-     printf("continue? (y/n)\n");
+        printf("continue? (y/n)\n");
      scanf(" %c", &input3);
      if(input3 == 'y' || input3 == 'Y'){
        continue;
@@ -55,6 +56,8 @@ int main(void){
      if(input3 == 'n' || input3 == 'N'){
       break;
      }
+     }
+     
     
 }
     return 0;
