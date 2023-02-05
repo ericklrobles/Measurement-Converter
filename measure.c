@@ -14,17 +14,17 @@ int main(void){
     
     while(1){
      printf("Enter A for pounds to kilo converter or Enter B for miles to kilometers converter\n");
-     scanf(" %c", &input);
-     if (input == 'A'|| input == 'a'){
+     scanf(" %c", &input); // asking for input from user deciding between A or B
+     if (input == 'A'|| input == 'a'){// lbs to kilos converter
         printf("Enter how many pounds you would like to convert to\n");
         scanf(" %d", &pounds);
-        if (pounds <= 0){
+        if (pounds <= 0){ // if statement used if the entered pounds is less or equal than 0, do the stuff below
          printf("try again and use a positive integer\n");
          break;
         }
-        new_input = (pounds * ptokilo);
+        new_input = (pounds * ptokilo); // the formula calculated to the given number of lbs and kept in new variable new_input
         printf(" The %d amount of pounds has converted into %.2f kilograms!\n", pounds, new_input);  
-        printf("continue? (y/n)\n");
+        printf("continue? (y/n)\n");//end of the lb to kilo calculator and prompting the user to continue or stop
       scanf(" %c", &input2);
       if(input2 == 'y' || input2 == 'Y'){
          continue;
@@ -32,17 +32,17 @@ int main(void){
       if (input2 == 'n' || input2 == 'N'){
          break;
       }else{
-         printf("try again and enter y\n");
+         printf("try again and enter y\n");//error handling
       }
      
      } 
       
      
      
-     if (input =='B'|| input =='b'){
+     if (input =='B'|| input =='b'){//miles to kilometers converter
         printf("Enter how many miles you would like to convert to\n");
         scanf(" %d", &miles);
-        if (miles <= 0){
+        if (miles <= 0){// if not a positive integer but a neg integer
          printf("try again and use a positive integer\n");
          break;
         }
