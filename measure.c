@@ -17,6 +17,10 @@ int main(void){
      if (input == 'A'|| input == 'a'){
         printf("Enter how many pounds you would like to convert to\n");
         scanf(" %d", &pounds);
+        if (pounds <= 0){
+         printf("try again and use a positive integer");
+         break;
+        }
         new_input = (pounds * ptokilo);
         printf(" The %d amount of pounds has converted into %.2f kilograms!\n", pounds, new_input);  
      }
@@ -24,8 +28,8 @@ int main(void){
      if (input =='B'|| input =='b'){
         printf("Enter how many miles you would like to convert to\n");
         scanf(" %d", &miles);
-        if(miles < 0){
-         printf("try again and use a positive integer");
+        if (miles <= 0){
+         printf("try again and use a positive integer\n");
          break;
         }
         new_input = (miles * milestokm);
