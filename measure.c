@@ -14,18 +14,18 @@ int main(void){
     
      printf("Enter A for pounds to kilo converter or Enter B for miles to kilometers converter\n");
      scanf(" %c", &input);
-     if (input == 'A'){
+     if (input == 'A'|| input == 'a'){
         printf("Enter how many pounds you would like to convert to\n");
         scanf(" %d", &pounds);
         new_input = (pounds * ptokilo);
         printf(" The %d amount of pounds has converted into %.2f kilograms!\n", pounds, new_input);  
      }
      
-     if (input =='B'){
+     if (input =='B'|| input =='b'){
         printf("Enter how many miles you would like to convert to\n");
         scanf(" %d", &miles);
         new_input = (miles * milestokm);
-        printf("The %d amount of miles has converted into %.2f km!", miles, new_input);
+        printf("The %d amount of miles has converted into %.2f km!\n", miles, new_input);
      }
     
     
