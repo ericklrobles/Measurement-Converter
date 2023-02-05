@@ -7,19 +7,23 @@
 int main(void){
     int pounds, miles, kilometers, kilos;
     char input;
-    char new_input;
+    float new_input;
     
     
      printf("Enter A for pounds to kilo converter or Enter B for miles to kilometers converter\n");
      scanf(" %c", &input);
      if (input == 'A'){
         printf("Enter how many pounds you would like to convert to\n");
-        scanf(" %d", pounds);
-        new_input = (pounds);
-        
+        scanf(" %d", &pounds);
+        new_input = (pounds * 0.454);
+        printf(" %.2f KG\n", new_input);  
      }
+     
      if (input =='B'){
-        printf("you have chosen the miles to kilometers converter\n");
+        printf("Enter how many miles you would like to convert to\n");
+        scanf(" %d", &miles);
+        new_input = (miles * 1.6);
+        printf(" %.2f km", new_input);
      }
     
     
